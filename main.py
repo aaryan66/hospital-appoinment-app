@@ -46,5 +46,16 @@ if user_input == "OPD":
         doctors_opd_tomorrow_choose = input("")
         opd_time_print = random.choice = (opd_time_clock)
         print(f"You have got an appoinment of {doctors_opd_tomorrow_choose} at {opd_time_print} Department : OPD")
-
+    
+    # OPD this weekend
+    if opd_time == "This weekend" or "this weekend":
+        print("Checking for the appoinment for this weekend")
+        print("Here are the doctors of OPD department who will be available this weekend")
+        doctors_opd_this_weekend_list = [random.sample(doctors_opd_today_list,2), random.sample(doctors_opd_tomorrow_list,2), "Dr Aman Shrestha", "Dr Asif Sheikh", "Dr Alice Doe"]
+        doctors_opd_this_weekend_print = random.sample(doctors_opd_this_weekend_list, 5)
+        print(doctors_opd_this_weekend_print)
+        print("Now since you have got the doctors please choose a doctor and we will let you know the appoinment time")
+        doctors_opd_this_weekend_choose = input("")
+        opd_time_print = random.choice = (opd_time_clock)
+        print(f"You have got an appoinment of {doctors_opd_this_weekend_choose} at {opd_time_print} Department : OPD")
     
