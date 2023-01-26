@@ -56,6 +56,17 @@ if user_input == "OPD":
         print(doctors_opd_this_weekend_print)
         print("Now since you have got the doctors please choose a doctor and we will let you know the appoinment time")
         doctors_opd_this_weekend_choose = input("")
-        opd_time_print = random.choice = (opd_time_clock)
+        opd_time_print = random.choice(opd_time_clock)
         print(f"You have got an appoinment of {doctors_opd_this_weekend_choose} at {opd_time_print} Department : OPD")
-    
+    # If user chooses later on then lets ask a date
+    if opd_time == "Later on": 
+        print("Please give a specific date")
+        date_input = input("")
+        print("Doctors for the specific date are : ")
+        doctor_opd_later_on_list = [random.sample(doctors_opd_today_list,2), random.sample(doctors_opd_tomorrow_list, 3), "Dr Ashesh Basnet"]
+        doctor_opd_later_on_print = random.sample(doctor_opd_later_on_list, 3)
+        print(doctor_opd_later_on_print)
+        print("Choose a doctor for {date_input} appoinment and we will let you time")
+        doctor_opd_later_on_choose = input("")
+        opd_time_print = random.choice(opd_time_clock)
+        
