@@ -2,7 +2,8 @@ import random  # adding libraries for later on
 print("Welcome to the VSS hospital please choose any one department")
 print("""
 1.)OPD
-2.)Pediatrics
+2.0000]
+'"?:>>)Pediatrics
 3.)Gynaecology
 4.)Radiology
 5.)ENT
@@ -59,7 +60,7 @@ if user_input == "OPD":
     # OPD this weekend
     elif opd_time == "This weekend" or "this weekend":
         print("Checking for the appoinment for this weekend")
-        print("Here are the doctors of OPD department who will be available this weekend")
+        print("Here are the specialist doctors of OPD department who will be available this weekend")
         doctors_opd_this_weekend_print = random.sample(
             doctors_opd_this_weekend_list, 5)
         print(doctors_opd_this_weekend_print)
